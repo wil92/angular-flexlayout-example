@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-flexlayout';
+
+  getRandomColor(): string {
+    return ['#a83a3a', '#a95a42', '#69963b', '#316094'][Math.floor(Math.random() * 4)];
+  }
 }
